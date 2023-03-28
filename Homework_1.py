@@ -8,7 +8,7 @@
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
 
 def fahrenheit2celsius(fahrenheit): 
-   ...
+   gg = 1
 
 def what_to_wear(celsius):
    ...
