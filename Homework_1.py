@@ -1,17 +1,26 @@
-# Name:
-# SBUID: 
+# Name: Hayoung Kwak
+# SBUID: 115242661
 
 # Remove the ellipses (...) when writing your solutions.
 
 # ---------------------------- Exercise I ---------------------------------------
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
-
+import math
 def fahrenheit2celsius(fahrenheit): 
-   gg = 1
+   return 5/9*(fahrenheit-32)
 
 def what_to_wear(celsius):
-   ...
+    if (celsius<-10):
+       print("Wear a Puffy jacket")
+    elif (-10<=celsius) and (celsius<=0):
+       print("Wear a Scarf")
+    elif (celsius>=0) and (celsius<=10):
+        print("Wear a Sweater")
+    elif (celsius>=10) and (celsius<=20):   
+        print("Wear a Light jacket")
+    else:
+        print("Wear T-shirt")
 
 # ---------------------------- Exercise II --------------------------------------
 # ----------------- Area and perimeter of a triangle  ---------------------------
@@ -19,13 +28,16 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    ...
+    A = abs(((x1*y2+x2*y3+x3*y1)-(x1*y3+x2*y1+x3*y2))/2)
+    return A
 
 def euclidean_distance(x1, y1, x2, y2):
-    ...
+    d = (((x1-x2)**2)+((y1+y2)**2))**(1/2)
+    return d
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    ...
+    P = ((((x1-x2)**2)+((y1-y2)**2))**(1/2))+((((x3-x2)**2)+((y3-y2)**2))**(1/2))+((((x1-x3)**2)+((y1-y3)**2))**(1/2))
+    return P
 
 
 # ---------------------------- Exercise III -------------------------------------
@@ -34,13 +46,16 @@ def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
 
 
 def deg2rad(deg):
-    ...
+    r = deg*(math.pi/180)
+    return r
 
 def apothem(number_sides, length_side):
-   ...
+   a = (length_side)/(2*math.tan(deg2rad(180/number_sides)))
+   return a
 
 def polygon_area(number_sides, length_side):
-   ...
+   A = number_sides*length_side*apothem(number_sides, length_side)/2
+   return A
 
 
 # ---------------------------- Test -------------------------------------
