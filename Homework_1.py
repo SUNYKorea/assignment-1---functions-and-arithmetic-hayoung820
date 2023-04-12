@@ -1,6 +1,8 @@
 # Name: Hayoung Kwak
 # SBUID: 115242661
-
+##################### SCORE ######################
+#######  Score:  9.5/10
+#################################################
 # Remove the ellipses (...) when writing your solutions.
 
 # ---------------------------- Exercise I ---------------------------------------
@@ -36,7 +38,7 @@ def euclidean_distance(x1, y1, x2, y2):
     return d
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    P = ((((x1-x2)**2)+((y1-y2)**2))**(1/2))+((((x3-x2)**2)+((y3-y2)**2))**(1/2))+((((x1-x3)**2)+((y1-y3)**2))**(1/2))
+    P = ((((x1-x2)**2)+((y1-y2)**2))**(1/2))+((((x3-x2)**2)+((y3-y2)**2))**(1/2))+((((x1-x3)**2)+((y1-y3)**2))**(1/2)) # use python fucntions and variables!!! youre literally wrinting the entire euclidean again here
     return P
 
 
